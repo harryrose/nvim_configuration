@@ -4,7 +4,15 @@ call plug#begin('~/.vim/plugged')
   Plug 'vim-airline/vim-airline-themes'
   Plug 'jeffkreeftmeijer/vim-numbertoggle'
   Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-surround'
+  Plug 'airblade/vim-gitgutter'
+  " colour scheme
+  Plug 'ParamagicDev/vim-medic_chalk'
 call plug#end()
+
+set updatetime=100
+
+colorscheme medic_chalk
 
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
