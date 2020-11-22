@@ -6,6 +6,11 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-surround'
   Plug 'airblade/vim-gitgutter'
+  " Language Support
+  Plug 'vim-syntastic/syntastic'
+  Plug 'tomlion/vim-solidity'
+  Plug 'pangloss/vim-javascript'
+  Plug 'bfrg/vim-jq'
   " colour scheme
   Plug 'ParamagicDev/vim-medic_chalk'
 call plug#end()
