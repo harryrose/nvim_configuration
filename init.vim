@@ -16,6 +16,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'bfrg/vim-jq'
   " colour scheme
   Plug 'ParamagicDev/vim-medic_chalk'
+  Plug 'hashivim/vim-terraform'
+  Plug 'godlygeek/tabular'
 call plug#end()
 
 set updatetime=100
@@ -24,6 +26,9 @@ colorscheme medic_chalk
 
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
+
+let g:terraform_align=1
+let g:terraform_fmt_on_save=1
 
 " Change how vim represents characters on the screen
 set encoding=utf-8
@@ -62,3 +67,4 @@ nnoremap <C-m> :bn<CR>
 " hide search results with ,<space>
 nnoremap ,<space> :noh<CR>
 
+nnoremap <C-\>t :terminal<CR>
