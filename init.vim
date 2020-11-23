@@ -6,7 +6,10 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-surround'
   Plug 'airblade/vim-gitgutter'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'danro/rename.vim'
   " Language Support
+  Plug 'preservim/nerdcommenter'
   Plug 'vim-syntastic/syntastic'
   Plug 'tomlion/vim-solidity'
   Plug 'pangloss/vim-javascript'
