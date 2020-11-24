@@ -20,6 +20,17 @@ call plug#begin('~/.vim/plugged')
   Plug 'godlygeek/tabular'
 call plug#end()
 
+" Let's save undo info!
+if !isdirectory($HOME."/.vim")
+    call mkdir($HOME."/.vim", "", 0770)
+endif
+if !isdirectory($HOME."/.vim/undo-dir")
+    call mkdir($HOME."/.vim/undo-dir", "", 0700)
+endif
+
+set undodir=~/.vim/undo-dir
+set undofile
+
 set updatetime=100
 
 colorscheme medic_chalk
@@ -27,7 +38,6 @@ colorscheme medic_chalk
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
-let g:terraform_align=1
 let g:terraform_fmt_on_save=1
 
 " Change how vim represents characters on the screen
